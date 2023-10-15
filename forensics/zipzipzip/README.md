@@ -58,4 +58,4 @@ if __name__ == "__main__":
     main()
 ```
 
-Flag: `**TCP1P{1_TH1NK_U_G00D_4T_SCR1PT1N9_botanbell_1s_h3r3^_^}**`
+Flag: `TCP1P{1_TH1NK_U_G00D_4T_SCR1PT1N9_botanbell_1s_h3r3^_^}`

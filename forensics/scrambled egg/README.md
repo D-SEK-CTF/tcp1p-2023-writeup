@@ -74,6 +74,6 @@ if __name__ == "__main__":
     main()
 ```
 
-![Untitled](scrambled%20egg%205a67c1b488f843b991ebd4e2f9136d21/Untitled.png)
+![Untitled](media/unscrambled.png)
 
-Flag: `**TCP1P{y0Ur_u5u4L_pN9_cHUnk_ch4LL}**`
+Flag: `TCP1P{y0Ur_u5u4L_pN9_cHUnk_ch4LL}`

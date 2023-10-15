@@ -24,7 +24,7 @@ ASCII: https://files.doxbin.gg/o3VdrMpt.png
 
 Here is a preview:
 
-![Untitled](brokenimg%2067f326be37ff4202bacb03bb1a06ac0e/Untitled.png)
+![Untitled](media/Untitled.png)
 
 ```python
 ❯ pngcheck -vv o3VdrMpt.png
@@ -55,11 +55,11 @@ Successfully wrote to: out.png
 
 Opening out.png we see that it is still corrupted:
 
-![Untitled](brokenimg%2067f326be37ff4202bacb03bb1a06ac0e/Untitled%201.png)
+![Untitled](media/Untitled%201.png)
 
 At this point I wanted to modify the raw bytes responsible for the width of the image, but the result was kind of hard to read (I did find that the resolution should be 497x501 though):
 
-![Untitled](brokenimg%2067f326be37ff4202bacb03bb1a06ac0e/Untitled%202.png)
+![Untitled](media/Untitled%202.png)
 
 Apparently this had something to do with invalid filters, although I’m not sure exactly what that means:
 
@@ -117,7 +117,7 @@ reshaped_image = Image.fromarray(new_image_array, "RGB")
 reshaped_image.save("reshaped.png")
 ```
 
-![Untitled](brokenimg%2067f326be37ff4202bacb03bb1a06ac0e/Untitled%203.png)
+![Untitled](media/Untitled%203.png)
 
 We can now see two encoded strings:
 
@@ -131,4 +131,4 @@ Using [https://scwf.dima.ninja](https://scwf.dima.ninja/) we find the flag by co
 
 You can also use CyberChef for this step: [https://gchq.github.io/CyberChef/#recipe=Magic(3,true,false,'TCP1P')&input=S1pDVTRVS05LWkJET1kySEtKV1ZRTVRIR0JTR1VUVEdKWkREU1VLTks1SERBWkNZSkY1RlFNU0tPTlNGUVNUR0paRFRLMjJZUEpMRzZUS1hMSVlHTVVMUEhVPT09PT09](https://gchq.github.io/CyberChef/#recipe=Magic(3,true,false,'TCP1P')&input=S1pDVTRVS05LWkJET1kySEtKV1ZRTVRIR0JTR1VUVEdKWkREU1VLTks1SERBWkNZSkY1RlFNU0tPTlNGUVNUR0paRFRLMjJZUEpMRzZUS1hMSVlHTVVMUEhVPT09PT09)
 
-Flag: `**TCP1P{pdf_h4v3_4_P1ctur3_blur_4nd_5h1ft}**`
+Flag: `TCP1P{pdf_h4v3_4_P1ctur3_blur_4nd_5h1ft}`
