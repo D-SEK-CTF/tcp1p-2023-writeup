@@ -17,7 +17,7 @@ We can then calculate the first value from the random function using the same fu
 int main()
 {
     srand(1337);
-    int r = rand() + 1337331;
+    int val = rand() + 1337331;
     printf("%d", val);
     return 0;
 }

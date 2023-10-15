@@ -1,6 +1,6 @@
 # zipzipzip
 
-The solution consists of extracting each of the 25.000 layers, with each layer containing a password.txt file and a new .zip file. By scripting this process you can do it in a reasonable amount of time.
+The solution consists of extracting each of the 25,000 layers, with each layer containing a password.txt file and a new .zip file. By scripting this process you can do it in a reasonable amount of time.
 
 Solution using 7-zip:
 

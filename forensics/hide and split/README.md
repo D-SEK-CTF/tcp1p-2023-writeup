@@ -8,7 +8,7 @@ The `flag{number}.txt` files do not contain anything useful, but the companion f
 
 ![Untitled](media/Untitled%201.png)
 
-These companion files are use something called alternate data streams (or ADS) for storing data. It cannot be read very easily on windows, so malware will sometimes leverage this to hide data or executables.
+These companion files use something called alternate data streams (or ADS) for storing data. It cannot be read very easily on windows, so malware will sometimes leverage this to hide data or executables.
 
 Anyway, after extracting all interesting files we can use a small script to concatenate their contents and display it as a single string:
 

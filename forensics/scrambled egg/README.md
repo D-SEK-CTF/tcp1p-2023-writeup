@@ -1,8 +1,8 @@
 # scrambled egg
 
-The [`scramble.py`](http://scramble.py) file describes how the original image was modified before becoming `scrambled.png`. Basically we want to reverse the steps taken by `scramble.py` and create an inverse function that takes in `scrambled.png` to generate the original image.
+The `scramble.py` file describes how the original image was modified before becoming `scrambled.png`. Basically we want to reverse the steps taken by `scramble.py` and create an inverse function that takes in `scrambled.png` to generate the original image.
 
-The logic was somewhat complex, so I started with a simpler 1x1 image I found online and worked from there. The interesting part is that [`scramble.py`](http://scramble.py) is actually lossy, generating an output image that is smaller than the input image. The missing bytes are chunk checksums though, and we can retrieve these by re-generating them ourselves as the chunk data is known.
+The logic was somewhat complex, so I started with a simpler 1x1 image I found online and worked from there. The interesting part is that `scramble.py` is actually lossy, generating an output image that is smaller than the input image. The missing bytes are chunk checksums though, and we can retrieve these by re-generating them ourselves as the chunk data is known.
 
 ```python
 from struct import pack, unpack

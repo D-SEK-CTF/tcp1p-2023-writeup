@@ -2,7 +2,7 @@
 
 When visiting the website, we see it’s a simple form enabling us to input LaTeX code and get a PDF file showing the output:
 
-![Screenshot from 2023-10-13 22.56.08.png](media/Screenshot_from_2023-10-13_22.56.08.png)
+![Screenshot from 2023-10-13 22.56.08.png](.media/Screenshot_from_2023-10-13_22.56.08.png)
 
 When reading the source code, we come across `main.go`, which holds the LaTeX logic of the website. `main.go` holds a list of commands that it considers as insecure:
 
@@ -19,7 +19,7 @@ We tried both these without digging too much, didn’t work.
 
 Another thing we saw was:
 
-> Why does `\input` in the blacklist include the backslash and other commands don’t? Maybe we can find a way to include something between \ and input to make it pass the filter.
+> Why does `\input` include the backslash in the blacklist, while other commands don’t? Maybe we can find a way to include something between \ and input to make it pass the filter.
 >
 
 Then I came across this thing called [catcode](https://en.wikibooks.org/wiki/TeX/catcode), a command that essentially changes the “meaning” of a character. A simple PoC showed that it worked:
@@ -34,7 +34,7 @@ Then I came across this thing called [catcode](https://en.wikibooks.org/wiki/TeX
 
 ![Screenshot 2023-10-13 at 23-07-20 http __localhost 52132_.png](./media/Screenshot_2023-10-13_at_23-07-20_http___localhost_52132_.png)
 
-**The challenges we needed to solve where:**
+**The challenges we needed to solve were:**
 
 - Execute `\input{/flag.txt}` by adding a char in-between or changing the meaning of `\`
 - Change the meaning of `{`, `_` and `}` since they are included in the flag
