@@ -2,7 +2,7 @@
 
 When visiting the website, we see it’s a simple form enabling us to input LaTeX code and get a PDF file showing the output:
 
-![Screenshot from 2023-10-13 22.56.08.png](.media/Screenshot_from_2023-10-13_22.56.08.png)
+![Screenshot from 2023-10-13 22.56.08.png](./media/Screenshot_from_2023-10-13_22.56.08.png)
 
 When reading the source code, we come across `main.go`, which holds the LaTeX logic of the website. `main.go` holds a list of commands that it considers as insecure:
 
